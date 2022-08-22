@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+}
+
+li {
+  list-style: none;
+}
+
+.container{
+  display: grid;
+  margin: 2rem 1rem;
+  grid-template-rows: 1fr repeat(5, 10rem);
+  row-gap: 1rem;
+}
+
+.user-info {
+  background-color: hsl(249deg 65% 52%);
+  padding: 1.5rem;
+  border-radius: 15px;
+  position: relative;
+  top: 1rem;
+  z-index: 1;
+}
+
+.user-name {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1rem;
+}
+
+.user-info p{
+  color: hsl(235, 45%, 61%);
+}
+
+.user-info span{
+  font-size: 1.5rem;
+  color: hsl(236, 100%, 87%);
+}
+
+.user-icon {
+  width: 20vw;
+  height: 20vw;
+  display: inline-block;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.user-icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.filter {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 0 0 15px 15px;
+  height: 5rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.filter li {
+  color: hsl(235, 45%, 61%);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.filter li:hover,
+.filter li:active{
+  color: hsl(236, 100%, 87%);
+}
+
+.activity {
+  height: 100%;
+  margin: 0;
+}
+
+.work .activity__indicator{
+  background-color: hsl(15, 100%, 70%);
+}
+
+.play .activity__indicator{
+  background-color: hsl(195, 74%, 62%);
+}
+
+.study .activity__indicator{
+  background-color: hsl(348, 100%, 68%);
+}
+
+.exercise .activity__indicator{
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social .activity__indicator{
+  background-color: hsl(264, 64%, 52%);
+}
+
+.self-care .activity__indicator{
+  background-color: hsl(43, 84%, 65%);
+}
+
+.activity__indicator{
+  border-radius: 15px 15px 0 0;
+  height: 3.5rem;
+}
+
+.activity__indicator img{
+  margin: 0 1rem 0 auto;
+  display: block;
+}
+
+.activity__container {
+  background-color: hsl(235, 46%, 20%);
+  position: relative;
+  z-index: 1;
+  top: -1rem;
+  border-radius: 15px;
+  height: 7.5rem;
+  padding: 1.5rem;
+}
+
+.activity__container{
+  display: grid;
+  grid-template-areas: 
+    "activity options"
+    "now last";
+  align-items: center;
+}
+.activity__container h1{
+  font-size: 1.2rem;
+  font-weight: 500;
+  grid-area: activity;
+}
+
+.activity__container img {
+  opacity: 0.7;
+  grid-area: options;
+  display: block;
+  margin-left: auto;
+}
+
+.activity__container h2{
+  font-size: 2rem;
+  font-weight: 300;
+  grid-area: now;
+}
+
+.activity__container h3{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: hsla(0, 0%, 98%, 0.5);
+  grid-area: last;
+  text-align: end;
+}
+
+
+
