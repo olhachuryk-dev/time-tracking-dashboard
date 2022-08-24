@@ -21,8 +21,6 @@ li {
 .container {
   display: grid;
   margin: 2rem 1rem;
-  grid-template-rows: 1fr repeat(5, 10rem);
-  row-gap: 1rem;
   align-self: center;
 }
 
@@ -79,11 +77,6 @@ li {
   font-weight: 400;
 }
 
-.filter li:hover,
-.filter li:active {
-  color: hsl(236, 100%, 87%);
-}
-
 .activity {
   height: 100%;
   margin: 0;
@@ -109,7 +102,7 @@ li {
   background-color: hsl(264, 64%, 52%);
 }
 
-.self-care .activity__indicator {
+.selfcare .activity__indicator {
   background-color: hsl(43, 84%, 65%);
 }
 
@@ -153,6 +146,7 @@ li {
   margin-left: auto;
 }
 
+
 .activity__container h2 {
   font-size: 2rem;
   font-weight: 300;
@@ -170,7 +164,7 @@ li {
 @media (min-width: 800px) {
   .container {
     grid-template-columns: repeat(4, minmax(180px, 236px));
-    grid-template-rows: 2fr;
+    grid-template-rows: 1fr;
     column-gap: 1rem;
     row-gap: 0;
     justify-content: center;
@@ -226,4 +220,15 @@ li {
   .activity__container h3 {
     text-align: left;
   }
+}
+
+.filter li:hover,
+.filter li:active,
+.filter .selected {
+  color: hsl(236, 100%, 87%);
+}
+
+.activity__container img:hover,
+.activity__container img:active {
+  opacity: 1;
 }
